@@ -57,7 +57,6 @@ const interval = setInterval(()=>{
         occupation: occup,
         price: rate,
     };
-    console.log(randomLancer);
    freeLancers.push(randomLancer);
    render();
    if(freeLancers.length === 15){
