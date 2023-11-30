@@ -1,3 +1,23 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: antiquewhite;
 }
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    background-color: beige;
+}
+
+h3{
+    background-color: antiquewhite;
+}
+

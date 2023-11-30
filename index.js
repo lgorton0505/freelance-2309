@@ -8,13 +8,13 @@ const freeLancers = [
     { name: 'Dr. Robert', price: 45, occupation: 'Programmer'},
 ];
 
-const names = ['Carl', 'James', 'Gabriel', 'Emmi', 'Lance', 'Sunn O)))', 'Samuel', 'Abe', 'Jason'];
+const names = ['Carl', 'James', 'Gabriel', 'Emmi', 'Lance', 'Sunn O)))', 'Samuel', 'Abe', 'Jason', 'Kurt', 'Blaine', 'William', 'Mike', 'Nick', 'Noah', 'Rick'];
 const occupations = ['Programmer', 'Petsitter', 'Therapist', 'Gardener', 'Drummer', 'Personal Chef', 'Singer', 'Guitarists', 'Pianist', 'Architect'];
 
-//setting spancount to the length of the freeLancer object
+
 
 function render(){
-   spanCount.innerHTML = freeLancers.length;
+   spanCount.innerHTML = freeLancers.length;  
 
    let sum = 0;
    freeLancers.forEach((lancer)=>{
@@ -26,6 +26,7 @@ function render(){
 
    const html = freeLancers.map((lancer)=> {
       return `
+      <h3>
          <li>
             ${lancer.name}
          </li>
@@ -36,6 +37,7 @@ function render(){
             Occupation: ${lancer.occupation}
          </li>
          <p></p>
+       </h3>
       `;
    }).join('');
 
